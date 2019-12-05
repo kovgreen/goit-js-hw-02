@@ -2,16 +2,6 @@
 
 // Напиши функцию checkForSpam(str), принимающую 1 параметр string - строку. Функция проверяет ее на содержание слов spam и sale. Если нашли зарещенное слово то функция возвращает true, если запрещенных слов нет функция возвращает false. Слова в строке могут быть в произвольном регистре.
 
-// const checkForSpam = function(str) {
-//   if (
-//     str.toLowerCase().includes('spam') ||
-//     str.toLowerCase().includes('sale')
-//   ) {
-//     return true;
-//   }
-//   return false;
-// };
-
 const checkForSpam = str =>
   str.toLowerCase().includes('spam') || str.toLowerCase().includes('sale');
 

@@ -5,19 +5,16 @@ let total = 0;
 
 do {
   input = prompt('Введи число');
-  let inputNumber = Number(input);
-  if (Number.isNaN(inputNumber)) {
+  if (Number.isNaN(Number(input)) || input === '') {
     alert('Было введено не число, попробуйте еще раз');
-    continue;
-  } else {
-    numbers.push(inputNumber);
+  } else if (input !== null) {
+    numbers.push(Number(input));
   }
 } while (input !== null);
 
-for (let number of numbers) {
-  total += number;
-}
-
-if (total !== 0) {
+if (numbers.length > 0) {
+  for (let number of numbers) {
+    total += number;
+  }
   console.log(`Общая сумма чисел равна ${total}`);
 }
