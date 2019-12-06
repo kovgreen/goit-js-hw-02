@@ -5,10 +5,13 @@
 
 let message;
 let pricePerWord = 0;
-const calculateEngravingPrice = function(message, pricePerWord) {
-  const words = message.split(' ');
-  return words.length * pricePerWord;
-};
+// const calculateEngravingPrice = function(message, pricePerWord) {
+//   const words = message.split(' ');
+//   return words.length * pricePerWord;
+// };
+
+const calculateEngravingPrice = (message, pricePerWord) =>
+  message.split(' ').length * pricePerWord;
 
 //Вызовы функции для проверки работоспособности твоей реализации.
 
